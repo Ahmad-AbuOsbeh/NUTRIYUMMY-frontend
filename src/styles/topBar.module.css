@@ -1,0 +1,40 @@
+.topBar {
+  height: 3rem;
+  width: 100%;
+  background-color: #62a403;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #f1f7e8;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.phone {
+  margin-right: 1rem;
+  width: 8.5rem;
+  border-right: solid 1px #f1f7e8;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.button {
+  padding: 0.4rem;
+  width: 8rem;
+  border: solid #ff7800;
+  border-radius: 0.3rem;
+  background-color: #ff7800;
+  color: #f1f7e8;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
