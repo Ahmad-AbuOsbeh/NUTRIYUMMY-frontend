@@ -1,0 +1,33 @@
+.header {
+  width: 50%;
+  height: 6rem;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 10rem;
+  height: 5rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link {
+  color: black;
+  font-weight: bold;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ff7800;
+}
