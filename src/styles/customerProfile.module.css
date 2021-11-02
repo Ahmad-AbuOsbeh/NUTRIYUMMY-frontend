@@ -7,7 +7,6 @@
 }
 
 .cardsContainer {
-  border: solid 1px red;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -17,7 +16,8 @@
 }
 
 .complaintForm {
-  border: solid 1px;
-  width: 35rem;
+  width: 30rem;
   height: 25rem;
+  position: sticky;
+  top: 3rem;
 }
