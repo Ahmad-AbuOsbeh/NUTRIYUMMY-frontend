@@ -22,6 +22,10 @@
   height: 13%;
   position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .secondSection {
   background-image: linear-gradient(45deg, #62a403, #c8e7a4);
@@ -42,9 +46,8 @@
 }
 
 .idText {
-  margin: auto;
   position: relative;
-  top: 20%;
+  right: -0.5rem;
 }
 
 .typeText {
@@ -70,4 +73,8 @@
 .contentContainer {
   width: 90%;
   border-bottom: solid 0.1px rgb(212, 209, 209);
+}
+
+.delete {
+  cursor: pointer;
 }

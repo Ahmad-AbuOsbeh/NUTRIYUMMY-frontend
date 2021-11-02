@@ -1,10 +1,16 @@
 import React from 'react';
 import styles from '../../styles/complaintCards.module.css';
+import { RiDeleteBin2Line } from 'react-icons/ri';
+
 function ComplaintCard() {
   return (
     <div className={styles.card}>
       <section className={styles.firstSection}>
+        <span></span>
         <h3 className={styles.idText}>Ahm-154785</h3>
+        <span className={styles.delete}>
+          <RiDeleteBin2Line />
+        </span>
       </section>
       <section className={styles.secondSection}>
         <h4 className={styles.typeText}>Serial Complaint</h4>
