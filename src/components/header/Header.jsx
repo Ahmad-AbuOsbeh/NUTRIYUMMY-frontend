@@ -5,7 +5,7 @@ import TopBar from './TopBar';
 import logo from '../../images/large_nutriyummy.png';
 function Header() {
   return (
-    <div>
+    <div className={styles.bigHeader}>
       <TopBar />
       <div className={styles.header}>
         <div>
