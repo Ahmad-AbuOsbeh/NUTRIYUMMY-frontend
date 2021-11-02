@@ -1,13 +1,11 @@
 .bigContainer {
   display: flex;
   flex-direction: row;
-  border: solid 1px;
   justify-content: space-between;
   padding: 2rem;
 }
 
 .requestsContainer {
-  /* border: solid red; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -16,9 +14,9 @@
   margin-right: 2rem;
 }
 .chartContainer {
-  border: solid green;
   width: 58rem;
   height: 26rem;
   position: sticky;
   top: 3rem;
+  margin-top: -2rem;
 }
