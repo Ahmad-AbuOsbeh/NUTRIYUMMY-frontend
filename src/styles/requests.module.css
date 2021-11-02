@@ -1,0 +1,89 @@
+.card {
+  border: solid 1px #ff7800;
+  margin: 2rem;
+  margin-top: 0;
+  height: 26.5rem;
+  width: 20rem;
+  position: relative;
+  background-color: whitesmoke;
+  text-align: left;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  cursor: default;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+.nameDiv {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -1.3rem;
+  padding: 0 0.5rem;
+}
+
+.customerInfo {
+  position: relative;
+  top: -1.3rem;
+}
+.custTitle {
+  border-top: #ff7800 solid 1px;
+  border-bottom: #ff7800 solid 1px;
+  padding-left: 0.5rem;
+  padding-bottom: 0.3rem;
+  background-image: linear-gradient(45deg, #62a403, #c8e7a4);
+}
+.email {
+  margin-top: -0.7rem;
+  margin-bottom: 2.7rem;
+  padding-left: 0.5rem;
+}
+
+.complaintInfo {
+  margin-top: -3rem;
+}
+
+.field {
+  color: #ff7800;
+}
+
+.content {
+  padding: 0 0.5rem;
+  margin-top: -0.2rem;
+}
+.status {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.btnContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button {
+  padding: 0.4rem;
+  width: 8rem;
+  border-radius: 0.3rem;
+  border: solid #ff7800 1px;
+  background-image: linear-gradient(45deg, #ff7800, #f1f1f1);
+
+  color: black;
+  font-weight: bold;
+}
+
+.data {
+  color: black;
+  font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
+}

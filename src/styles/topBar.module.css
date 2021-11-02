@@ -32,9 +32,12 @@
   border-radius: 0.3rem;
   background-color: #ff7800;
   color: #f1f7e8;
+  border: solid #ff7800 1px;
+  background-image: linear-gradient(45deg, #ff7800, #f1f1f1);
+  color: black;
+  font-weight: bold;
 }
 
 .button:hover {
   cursor: pointer;
-  transform: scale(1.02);
 }
