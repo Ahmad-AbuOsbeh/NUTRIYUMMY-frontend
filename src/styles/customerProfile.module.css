@@ -1,0 +1,23 @@
+.bigContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.cardsContainer {
+  border: solid 1px red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-right: 2rem;
+}
+
+.complaintForm {
+  border: solid 1px;
+  width: 35rem;
+  height: 25rem;
+}
