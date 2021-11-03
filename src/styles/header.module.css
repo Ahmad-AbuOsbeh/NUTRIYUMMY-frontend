@@ -34,3 +34,7 @@
 .link:hover {
   color: #ff7800;
 }
+
+.logout:hover {
+  cursor: pointer;
+}

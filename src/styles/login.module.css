@@ -7,7 +7,7 @@
   width: 20%;
   margin: auto;
   margin-top: 1rem;
-  height: 15rem;
+  height: 21rem;
   justify-content: space-around;
   border: solid #ff7800 1px;
   color: #ff7800;
@@ -34,4 +34,9 @@
 }
 .button:hover {
   cursor: pointer;
+}
+
+.signupMsg {
+  margin-bottom: 0.5rem;
+  color: black;
 }
