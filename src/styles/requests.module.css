@@ -1,5 +1,5 @@
 .card {
-  border: solid 1px #ff7800;
+  border: solid 1px #62a403;
   margin: 2rem;
   margin-top: 0;
   height: 26.5rem;
@@ -30,12 +30,13 @@
   position: relative;
   top: -1.3rem;
 }
+
 .custTitle {
-  border-top: #ff7800 solid 1px;
-  border-bottom: #ff7800 solid 1px;
+  border-top: #62a403 solid 1px;
+  border-bottom: #62a403 solid 1px;
   padding-left: 0.5rem;
   padding-bottom: 0.3rem;
-  background-image: linear-gradient(45deg, #62a403, #c8e7a4);
+  background-image: linear-gradient(180deg, #62a403, #c8e7a4);
 }
 .email {
   margin-top: -0.7rem;
