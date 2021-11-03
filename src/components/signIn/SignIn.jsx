@@ -20,6 +20,7 @@ function SignIn() {
       // decode the token to get the user info
       const user = jwt.decode(token);
       console.log(token, user);
+      user.token = token;
       // check if the user exists or not
       if (user) {
         // if he is a valid user, make him logged in
