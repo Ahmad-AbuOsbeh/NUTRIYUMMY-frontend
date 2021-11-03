@@ -27,9 +27,9 @@ function App() {
     // check the token in cookies
     if (token !== 'null') {
       // decode the token to get the user info
-      const user = jwt.decode(token);
+      let user = jwt.decode(token);
       console.log(token, user);
-      user.token = token;
+      user ? (user.token = token) : (user = user);
       // check if the user exists or not
       if (user) {
         // if he is a valid user, make him logged in

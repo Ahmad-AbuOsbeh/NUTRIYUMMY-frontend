@@ -8,7 +8,7 @@ import { useHistory } from 'react-router-dom';
 function ComplaintForm({ fetchMyComplaint }) {
   const history = useHistory();
 
-  const [complaintData, setComplaintData] = useState({});
+  const [complaintData, setComplaintData] = useState({ complaintType: 'Serial Complaints' });
   const { isLoggedIn, user } = useSelector((state) => state.authReducer);
 
   // addComplaintHandler
@@ -20,7 +20,6 @@ function ComplaintForm({ fetchMyComplaint }) {
       },
     });
     e.target.reset();
-    setComplaintData({});
     fetchMyComplaint();
   }
 
@@ -33,11 +32,11 @@ function ComplaintForm({ fetchMyComplaint }) {
       <form className={styles.form} onSubmit={addComplaintHandler}>
         <h2>Complaint Form:</h2>
         <div className={styles.fieldsContainer}>
-          <select className={styles.field} placeholder='complaint type' name='complaintType' onChange={onChangeHandler}>
-            <option>Serial Complaints</option>
-            <option>Personal Complaints</option>
-            <option>Delivery Complaints</option>
-            <option>Quality Complaints</option>
+          <select className={styles.field} placeholder='complaint type' name='complaintType' defaultValue='Serial Complaints' onChange={onChangeHandler}>
+            <option value='Serial Complaints'>Serial Complaints</option>
+            <option value='Personal Complaints'>Personal Complaints</option>
+            <option value='Delivery Complaints'>Delivery Complaints</option>
+            <option value='Quality Complaints'>Quality Complaints</option>
           </select>
           <input className={styles.field} type='date' placeholder='date' name='complaintDate' onChange={onChangeHandler} />
           <input className={styles.field} type='number' placeholder='Invoice number' name='invoiceNumber' onChange={onChangeHandler} />

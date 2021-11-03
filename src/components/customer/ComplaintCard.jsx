@@ -26,7 +26,13 @@ function ComplaintCard({ myComplaints, deleteHandler }) {
               <p>{comp.complaint_date}</p>
               <p>invoice number: {comp.invoice_number}</p>
             </div>
-            <span className={styles.status}>{comp.complaint_status}</span>
+            <span
+              className={`${styles.status} ${comp.complaint_status == 'Solved' ? styles.solved : styles.rr} ${comp.complaint_status == 'Rejected' ? styles.rejected : styles.rr} ${
+                comp.complaint_status == 'Pending' ? styles.pending : styles.rr
+              }`}
+            >
+              {comp.complaint_status}
+            </span>
           </section>
           <section className={styles.fourthSection}></section>
         </div>

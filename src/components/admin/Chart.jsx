@@ -1,19 +1,20 @@
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import styles from '../../styles/chart.module.css';
-const data = {
-  labels: ['Serial Complaints', 'Personal Complaints', 'Delivery Complaints', 'Quality Complaints'],
-  datasets: [
-    {
-      label: '# of Votes',
-      data: [12, 19, 3, 5],
-      backgroundColor: ['#62a403', '#ff7800', '#055052', '#C400FF'],
-      borderColor: ['#62a403', '#ff7800', '#055052', '#C400FF'],
-      borderWidth: 1,
-    },
-  ],
-};
-function Chart() {
+function Chart({ results }) {
+  const data = {
+    labels: ['Serial Complaints', 'Personal Complaints', 'Delivery Complaints', 'Quality Complaints'],
+    datasets: [
+      {
+        label: '# of Votes',
+        // data: [12, 19, 3, 5],
+        data: results,
+        backgroundColor: ['#62a403', '#ff7800', '#055052', '#C400FF'],
+        borderColor: ['#62a403', '#ff7800', '#055052', '#C400FF'],
+        borderWidth: 1,
+      },
+    ],
+  };
   return (
     <div className={styles.chart}>
       <div className='header'>
