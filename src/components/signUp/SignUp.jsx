@@ -13,13 +13,6 @@ function SignUp() {
   const dispatch = useDispatch();
   const history = useHistory();
 
-  //did-mount
-  // useEffect(() => {
-  //   // get the token from the browser cookies
-  //   const token = cookie.load('token');
-  //   validateToken(token);
-  // }, []);
-
   // validateToken
   function validateToken(token) {
     // check the token in cookies
