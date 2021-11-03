@@ -6,7 +6,7 @@ function ComplaintCard({ myComplaints, deleteHandler }) {
   return (
     <>
       {myComplaints.map((comp) => (
-        <div className={styles.card}>
+        <div key={comp.complaint_id} className={styles.card}>
           <section className={styles.firstSection}>
             <span></span>
             <h3 className={styles.idText}>{comp.complaint_id}</h3>

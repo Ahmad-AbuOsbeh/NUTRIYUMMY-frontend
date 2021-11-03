@@ -4,7 +4,7 @@ function RequestCard({ allComplaints, rejectHandler, solveHandler }) {
   return (
     <>
       {allComplaints.map((comp) => (
-        <div className={styles.card}>
+        <div key={comp.complaint_id} className={styles.card}>
           <section className={styles.customerInfo}>
             <h3 className={styles.custTitle}>Customer Information:</h3>
             <div className={styles.nameDiv}>
