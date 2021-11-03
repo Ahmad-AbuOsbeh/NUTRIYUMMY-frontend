@@ -23,6 +23,7 @@
 
 .icon {
   margin-right: 0.5rem;
+  color: #f1f7e8;
 }
 
 .button {
@@ -40,4 +41,8 @@
 
 .button:hover {
   cursor: pointer;
+}
+
+.avatar {
+  color: #ff7800 !important;
 }

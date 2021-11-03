@@ -5,6 +5,7 @@ import { GrLocation } from 'react-icons/gr';
 import { useSelector } from 'react-redux';
 import { Chip, Avatar } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
+import { HiOutlineLocationMarker } from 'react-icons/hi';
 
 function TopBar() {
   const history = useHistory();
@@ -16,7 +17,7 @@ function TopBar() {
         <div className={styles.leftSide}>
           <LocalPhoneIcon className={styles.icon} />
           <p className={styles.phone}>+90 165 568 7894</p>
-          <GrLocation className={styles.icon} />
+          <HiOutlineLocationMarker className={styles.icon} />
           <p>Maromora Road, Washington, USA</p>
         </div>
 
@@ -28,7 +29,7 @@ function TopBar() {
           )}
           {isLoggedIn && (
             <span className={styles.avatar}>
-              <Chip avatar={<Avatar>{user.username.slice(0, 1).toUpperCase()}</Avatar>} label={user.username} />
+              <Chip className={styles.avatar} avatar={<Avatar className={styles.avatar}>{user.username.slice(0, 1).toUpperCase()}</Avatar>} label={user.username} />
             </span>
           )}
         </div>

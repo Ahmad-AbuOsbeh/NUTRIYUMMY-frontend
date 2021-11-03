@@ -55,6 +55,7 @@
 .content {
   padding: 0 0.5rem;
   margin-top: -0.2rem;
+  height: 4.5rem;
 }
 .status {
   margin: auto;
@@ -87,4 +88,30 @@
 
 .button:hover {
   cursor: pointer;
+}
+
+.solved {
+  color: whitesmoke;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: green;
+  padding: 0.1rem 1.5rem 0.4rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.rejected {
+  color: whitesmoke;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: red;
+  padding: 0.1rem 1.2rem 0.4rem 1.2rem;
+  border-radius: 1.5rem;
+}
+.pending {
+  color: whitesmoke;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: rgb(0, 153, 255);
+  padding: 0.1rem 1.2rem 0.4rem 1.2rem;
+  border-radius: 1.5rem;
 }
