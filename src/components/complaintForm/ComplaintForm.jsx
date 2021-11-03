@@ -7,10 +7,10 @@ function ComplaintForm() {
         <h2>Complaint Form:</h2>
         <div className={styles.fieldsContainer}>
           <select className={styles.field} placeholder='complaint type'>
-            <option>1</option>
-            <option>sdfd</option>
-            <option>weewewe</option>
-            <option>gggggggggg</option>
+            <option>Serial Complaints</option>
+            <option>Personal Complaints</option>
+            <option>Delivery Complaints</option>
+            <option>Quality Complaints</option>
           </select>
           <input className={styles.field} type='date' placeholder='date' />
           <input className={styles.field} type='number' placeholder='Invoice number' />

@@ -1,0 +1,37 @@
+.form {
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: auto;
+  margin-top: 1rem;
+  height: 25rem;
+  justify-content: space-around;
+  border: solid #ff7800 1px;
+  color: #ff7800;
+}
+
+.field {
+  height: 2rem;
+  border: solid #ff7800 1px;
+}
+.button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+  margin-left: 27%;
+  border-radius: 1rem;
+  background-color: #ff7800;
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: #f1f7e8;
+  font-weight: bolder;
+  border: solid #ff7800 1px;
+  background-image: linear-gradient(45deg, #ff7800, #f1f1f1);
+  color: black;
+  font-weight: bold;
+}
+.button:hover {
+  cursor: pointer;
+}
