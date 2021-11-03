@@ -19,6 +19,12 @@
 - there is a chart that will show the number of complaints based on thier types.
 - hope you will enjoy it! , and I appreciate anyfeedback.
 
+### backend server built with:
+
+- node.js, express.js, and MongoDB for database.
+- fully authenticated, Basic & Bearer authentication and authorization.
+- ACL, access control list used to give the permissions for the users.
+
 ## Technologies & Packages (Front-end):
 
 - React.js
@@ -35,3 +41,15 @@
 - axios
 - react-if
 - react-cookies
+
+## Technologies & Packages (Back-end):
+
+- node.js
+- MongoDB
+- express
+- mongoose
+- base-64
+- bcrypt
+- jsonwebtoken
+- cors
+- dotenv
