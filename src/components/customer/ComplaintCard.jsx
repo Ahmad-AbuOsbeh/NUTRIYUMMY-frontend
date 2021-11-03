@@ -2,32 +2,36 @@ import React from 'react';
 import styles from '../../styles/complaintCards.module.css';
 import { RiDeleteBin2Line } from 'react-icons/ri';
 
-function ComplaintCard() {
+function ComplaintCard({ myComplaints, deleteHandler }) {
   return (
-    <div className={styles.card}>
-      <section className={styles.firstSection}>
-        <span></span>
-        <h3 className={styles.idText}>Ahm-154785</h3>
-        <span className={styles.delete}>
-          <RiDeleteBin2Line />
-        </span>
-      </section>
-      <section className={styles.secondSection}>
-        <h4 className={styles.typeText}>Serial Complaint</h4>
-      </section>
-      <section className={styles.thirdSection}>
-        <div className={styles.contentContainer}>
-          <p className={styles.content}>"some one treats me in not professional way while i'm talking my order, and now I'm ganna take an action."</p>
-        </div>
+    <>
+      {myComplaints.map((comp) => (
+        <div className={styles.card}>
+          <section className={styles.firstSection}>
+            <span></span>
+            <h3 className={styles.idText}>{comp.complaint_id}</h3>
+            <span className={styles.delete}>
+              <RiDeleteBin2Line onClick={() => deleteHandler(comp._id)} />
+            </span>
+          </section>
+          <section className={styles.secondSection}>
+            <h4 className={styles.typeText}>{comp.complaint_type}</h4>
+          </section>
+          <section className={styles.thirdSection}>
+            <div className={styles.contentContainer}>
+              <p className={styles.content}>{`"${comp.complaint_content}."`}</p>
+            </div>
 
-        <div>
-          <p>1-11-2021</p>
-          <p>invoice number: 52148</p>
+            <div>
+              <p>{comp.complaint_date}</p>
+              <p>invoice number: {comp.invoice_number}</p>
+            </div>
+            <span className={styles.status}>{comp.complaint_status}</span>
+          </section>
+          <section className={styles.fourthSection}></section>
         </div>
-        <span className={styles.status}>Pending</span>
-      </section>
-      <section className={styles.fourthSection}></section>
-    </div>
+      ))}
+    </>
   );
 }
 
